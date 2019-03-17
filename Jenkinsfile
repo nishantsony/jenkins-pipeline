@@ -9,7 +9,7 @@ pipeline {
        stage ('JUnit') {
            steps {
                echo "JUnit Passed Successfully!"
-               sh "./JUnit.sh"
+               sh "./test.sh"
            }
        }
        stage ('Quality-Gate') {

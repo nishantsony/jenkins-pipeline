@@ -9,6 +9,7 @@ pipeline {
        stage ('JUnit') {
            steps {
                echo "JUnit Passed Successfully!"
+               sh "ls -al"
                sh "./test.sh"
            }
        }

@@ -9,8 +9,9 @@ pipeline {
        stage ('JUnit') {
            steps {
                echo "JUnit Passed Successfully!"
+               sh "chmod +x JUnit.sh"
                sh "ls -al"
-               sh "./test.sh"
+               sh "./JUnit.sh"
            }
        }
        stage ('Quality-Gate') {
